@@ -15,10 +15,10 @@ typedef struct
 */
 typedef unsigned char bitnode;
 
-bitnode* createBitArray(unsigned long n);	//n e' o numero de bits que são necessarios
+bitnode* createBitArray(unsigned long long n);	//n e' o numero de bits que são necessarios
 void destroyBitArray(bitnode* bitarr);
-void setBit(bitnode* bitarr, unsigned long bitpos);		//seta um bit como 1
-void clearBit(bitnode* bitarr, unsigned long bitpos);	//seta um bit como 0
-int bitValue(bitnode* bitarr, unsigned long bitpos);	//retorna o valor de um bit no vetor
+void setBit(bitnode* bitarr, unsigned long long bitpos);		//seta um bit como 1
+void clearBit(bitnode* bitarr, unsigned long long bitpos);	//seta um bit como 0
+int bitValue(bitnode* bitarr, unsigned long long bitpos);	//retorna o valor de um bit no vetor
 
 #endif
