@@ -20,7 +20,7 @@ int main(void)
 	setBit(bitarr, 4);
 	setBit(bitarr, 5);
 	setBit(bitarr, 6);
-	clearBit(bitarr, 7);
+	clearBit(bitarr, 6);
 
 	printf("%c\n", bitarr[0]);
 	
