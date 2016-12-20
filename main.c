@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include "bitarray.h"
+<<<<<<< HEAD
 
 /*
 *outro comentario besta
+=======
+/*
+*so um comentario besta
+>>>>>>> experimental
 */
 int main(void)
 {
