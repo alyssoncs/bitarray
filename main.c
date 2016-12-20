@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "bitarray.h"
 
+/*
+*outro comentario besta
+*/
 int main(void)
 {
 	bitnode* bitarr = createBitArray(8);
@@ -17,5 +20,5 @@ int main(void)
 	printf("%c\n", bitarr[0]);
 	
 	destroyBitArray(bitarr);
-	return 0;
+	//return 0;
 }
