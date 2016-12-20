@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "bitarray.h"
-
+/*
+*so um comentario besta
+*/
 int main(void)
 {
 	bitnode* bitarr = createBitArray(8);
