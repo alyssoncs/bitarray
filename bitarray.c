@@ -1,7 +1,7 @@
 #include "bitarray.h"
 #include <stdlib.h>
 
-bitnode *createBitArray(unsigned long long n)
+bitnode *create_bit_array(unsigned long long n)
 {
 	bitnode *bitarr;
 	unsigned long long p = n / 8;
@@ -12,12 +12,12 @@ bitnode *createBitArray(unsigned long long n)
 	return bitarr;
 }
 
-void destroyBitArray(bitnode *bitarr)
+void destroy_bit_array(bitnode *bitarr)
 {
 	free(bitarr);
 }
 
-void setBit(bitnode *bitarr, unsigned long long bitpos)
+void set_bit(bitnode *bitarr, unsigned long long bitpos)
 {
 	unsigned long long p = bitpos / 8;
 	bitnode aux = 1;
@@ -28,7 +28,7 @@ void setBit(bitnode *bitarr, unsigned long long bitpos)
 	}
 }
 
-void clearBit(bitnode *bitarr, unsigned long long bitpos)
+void clear_bit(bitnode *bitarr, unsigned long long bitpos)
 {
 	unsigned long long p = bitpos / 8;
 	bitnode aux = 1;
@@ -39,7 +39,7 @@ void clearBit(bitnode *bitarr, unsigned long long bitpos)
 	}
 }
 
-int bitValue(bitnode *bitarr, unsigned long long bitpos)
+int bit_value(bitnode *bitarr, unsigned long long bitpos)
 {
 	unsigned long long p = bitpos / 8;
 	bitnode aux = 1;
