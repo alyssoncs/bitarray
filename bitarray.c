@@ -1,10 +1,10 @@
 #include "bitarray.h"
 #include <stdlib.h>
 
-bitnode *create_bit_array(unsigned long long n)
+bitnode *create_bit_array(size_t n)
 {
 	bitnode *bitarr;
-	unsigned long long p = n / 8;
+	size_t p = n / 8;
 
 	if (n % 8) //if n is not a multiple of 8
 		p++;
@@ -17,9 +17,9 @@ void destroy_bit_array(bitnode *bitarr)
 	free(bitarr);
 }
 
-void set_bit(bitnode *bitarr, unsigned long long bitpos)
+void set_bit(bitnode *bitarr, size_t bitpos)
 {
-	unsigned long long p = bitpos / 8;
+	size_t p = bitpos / 8;
 	bitnode aux = 1;
 
 	if (bitarr) {
@@ -28,9 +28,9 @@ void set_bit(bitnode *bitarr, unsigned long long bitpos)
 	}
 }
 
-void clear_bit(bitnode *bitarr, unsigned long long bitpos)
+void clear_bit(bitnode *bitarr, size_t bitpos)
 {
-	unsigned long long p = bitpos / 8;
+	size_t p = bitpos / 8;
 	bitnode aux = 1;
 
 	if (bitarr) {
@@ -39,9 +39,9 @@ void clear_bit(bitnode *bitarr, unsigned long long bitpos)
 	}
 }
 
-int bit_value(bitnode *bitarr, unsigned long long bitpos)
+int bit_value(bitnode *bitarr, size_t bitpos)
 {
-	unsigned long long p = bitpos / 8;
+	size_t p = bitpos / 8;
 	bitnode aux = 1;
 
 	if (bitarr) {
