@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	bitnode* bitarr = createBitArray(8);
+	bitnode *bitarr = createBitArray(8);
 
 	clearBit(bitarr, 0);
 	setBit(bitarr, 1);
@@ -12,12 +12,12 @@ int main(void)
 	setBit(bitarr, 4);
 	setBit(bitarr, 5);
 	setBit(bitarr, 6);
-    //hahahahahahahahahah
-    //hueheue
+	//hahahahahahahahahah
+	//hueheue
 	clearBit(bitarr, 6);
 
 	printf("%c\n", bitarr[0]);
-	
+
 	destroyBitArray(bitarr);
 	//return 0;
 }
