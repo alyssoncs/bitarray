@@ -3,21 +3,22 @@
 
 int main(void)
 {
-	bitnode *bitarr = createBitArray(8);
+	bitnode *bitarr = create_bit_array(8);
 
-	clearBit(bitarr, 0);
-	setBit(bitarr, 1);
-	clearBit(bitarr, 2);
-	clearBit(bitarr, 3);
-	setBit(bitarr, 4);
-	setBit(bitarr, 5);
-	setBit(bitarr, 6);
-	//hahahahahahahahahah
-	//hueheue
-	clearBit(bitarr, 6);
+	clear_bit(bitarr, 0);
+	set_bit(bitarr, 1);
+	clear_bit(bitarr, 2);
+	clear_bit(bitarr, 3);
+	set_bit(bitarr, 4);
+	set_bit(bitarr, 5);
+	set_bit(bitarr, 6);
+	clear_bit(bitarr, 7);
 
-	printf("%c\n", bitarr[0]);
+	for (int i = 0; i < 8; i++) 
+		printf("%d", bit_value(bitarr, i));
+	printf("\n");
 
-	destroyBitArray(bitarr);
-	//return 0;
+	destroy_bit_array(bitarr);
+	
+	return 0;
 }

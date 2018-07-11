@@ -3,12 +3,12 @@
 
 bitnode *create_bit_array(size_t n)
 {
-	size_t size = n / 8;
+	size_t num = n / 8;
 
 	if (n % 8 != 0)
-		size++;
+		num++;
 
-	bitnode *bitarr = calloc(sizeof(bitnode) * size);
+	bitnode *bitarr = calloc(num, sizeof(bitnode));
 
 	return bitarr;
 }
@@ -21,7 +21,7 @@ void destroy_bit_array(bitnode *bitarr)
 static bitnode _get_mask(size_t bitpos)
 {
 	bitnode bit_number = bitpos % 8;	/* The n'th bit that this bit will ocupy in its byte */
-	bitnode mask = 1 << (7 - bitnumber);	/* The mask to set that bit */		
+	bitnode mask = 1 << (7 - bit_number);	/* The mask to set that bit */		
 
 	return mask;
 }
