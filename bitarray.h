@@ -7,14 +7,14 @@
 typedef unsigned char bitnode;
 
 
-bitnode *create_bit_array(size_t n);                  //n e' o numero de bits que são necessarios
+bitnode *create_bit_array(size_t n);
 
 void destroy_bit_array(bitnode *bitarr);
 
-void set_bit(bitnode *bitarr, size_t bitpos);        //seta um bit como 1
+void set_bit(bitnode *bitarr, size_t bitpos);
 
-void clear_bit(bitnode *bitarr, size_t bitpos);      //seta um bit como 0
+void clear_bit(bitnode *bitarr, size_t bitpos);
 
-int bit_value(bitnode *bitarr, size_t bitpos);       //retorna o valor de um bit no vetor
+int bit_value(bitnode *bitarr, size_t bitpos);
 
 #endif
